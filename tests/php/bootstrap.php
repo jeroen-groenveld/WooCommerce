@@ -7,6 +7,8 @@ if (!file_exists($vendor . 'autoload.php')) {
     die('Please install via Composer before running tests.');
 }
 
+echo $vendor . 'autoload.php';
+
 require_once __DIR__ . '/Stubs/stubs.php';
 require_once $vendor . 'brain/monkey/inc/patchwork-loader.php';
 require_once $vendor . 'autoload.php';
